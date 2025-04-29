@@ -91,8 +91,8 @@ const App = () => {
         vice se pouziva ↓ protoze vetsina komponent nema nic v sobe
       */}
       {/* <ViewBox value={cislo + 1} max={333} color={(p) => "red"} */}
-      <PercentView value={5} max={100} makeColor={(p) => "green"} />
-      <PercentView value={20} max={200} makeColor={(p) =>"blue"} />
+      <PercentView value={5} max={100} makeColor={(p) => `hsl(10,100%, ${p*50}%)` } />
+      <PercentView value={20} max={200} makeColor={(p) =>`hsl(10,100%, ${p*50}%)` }/>
       <PercentView value={50} max={200} makeColor={(p) => `hsl(10,100%, ${p*50}%)` }/>
       
 
