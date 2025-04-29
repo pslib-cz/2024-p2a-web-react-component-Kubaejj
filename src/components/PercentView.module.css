@@ -4,6 +4,7 @@
 
 .percentview {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -12,4 +13,14 @@
     padding: 1rem;
     margin: 1rem;
     background-color: #f0f8ff;
+}
+.percentview p {
+    margin: 0;
+}
+.bar{
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    border: 1px solid #ccc; 
 }

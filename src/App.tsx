@@ -84,16 +84,17 @@ const arrow4: ArrowType = function (x) {
 
 const App = () => {
   let cislo: number = 34;
+  cislo -= 1;
   return ( //<> </> aby mohlo byt vic komponentu
     <>
       {/* toto pouzit kdyz do toho neco budu davat  → <PercentView></PercentView> 
         vice se pouziva ↓ protoze vetsina komponent nema nic v sobe
       */}
       {/* <ViewBox value={cislo + 1} max={333} color={(p) => "red"} */}
-      <PercentView value={5} max={100} makeColor={(p) => `rgb(${p * 2 * 100}, 25, 255)`} />
-      <PercentView value={20} max={200} makeColor={(p) => `rgb(${p * 2 * 100}, 155, 255)`} />
-      <PercentView value={50} max={400} makeColor={(p) => `rgb(${p * 2 * 100}, 225, 255)`} />
-      <p>blublbubl</p>
+      <PercentView value={5} max={100} makeColor={(p) => "green"} />
+      <PercentView value={20} max={200} makeColor={(p) =>"blue"} />
+      <PercentView value={50} max={200} makeColor={(p) => `hsl(10,100%, ${p*50}%)` }/>
+      
 
 
 
