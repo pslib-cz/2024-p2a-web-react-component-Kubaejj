@@ -1,0 +1,15 @@
+/* musi se jmenovat stejne jako komponenta*/
+/* jinak to nefunguje */
+/* tohle je css modul, ktery se importuje do komponenty */
+
+.percentview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 5px solid #45b4d6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #f0f8ff;
+}
