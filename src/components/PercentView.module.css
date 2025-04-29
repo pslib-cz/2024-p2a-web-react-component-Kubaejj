@@ -3,24 +3,21 @@
 /* tohle je css modul, ktery se importuje do komponenty */
 
 .percentview {
+    width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    border: 5px solid #45b4d6;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: #f0f8ff;
+    padding: 1em;
+    border: 1px solid #772b2b;
+    font-size: 1.5em;
+
 }
-.percentview p {
-    margin: 0;
+.percentviewbar {
+    border: 1px solid #ccc;
+    height: 1em;
+    
 }
-.bar{
-    width: 100%;
-    height: 20px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    border: 1px solid #ccc; 
+
+.bar {
+    height: 100%;
 }

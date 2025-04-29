@@ -28,11 +28,12 @@ type PercentViewType = {
 const PercentView: FC<PercentViewType> = ({max, value, makeColor}) => { //základ, export - explicitně     nebyla by to react komponenta kdyby jsme tam napsal jen PercentViewType bez fc
    
     return (
-        <div className={style.percentview} style={ {color: makeColor(value / max)}  }>
-           <p> { value / max * 100}% </p>
-            <div className={style.bar}>
-
-                <div style={ {height:"100%", backgroundColor: makeColor(value / max), width: `${value = max - 100}%`  } }></div>
+             <div className={style.percentview}>
+            <p>{(value / max) * 100}%</p>
+            <div className={style.percentviewbar}>
+                <div className={style.bar} style={ {backgroundColor: makeColor(value/max), width: `${(value / max) * 100}%`}  }>
+                    
+                </div>
             </div>
         </div>
     )

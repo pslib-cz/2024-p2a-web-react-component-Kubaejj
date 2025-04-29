@@ -1,5 +1,5 @@
 import './App.css'
-import PercentView from './components/PercentView'
+import ViewBox from './components/PercentView'
 //abych mohl komponentu pouzit tak ji musim dat sem a musi to byt ./neco 
 
 /*
@@ -83,7 +83,7 @@ const arrow4: ArrowType = function (x) {
 
 
 const App = () => {
-  let cislo: number = 34;
+  let cislo: number = 20;
   cislo -= 1;
   return ( //<> </> aby mohlo byt vic komponentu
     <>
@@ -91,10 +91,11 @@ const App = () => {
         vice se pouziva ↓ protoze vetsina komponent nema nic v sobe
       */}
       {/* <ViewBox value={cislo + 1} max={333} color={(p) => "red"} */}
-      <PercentView value={5} max={100} makeColor={(p) => `hsl(10,100%, ${p*50}%)` } />
-      <PercentView value={20} max={200} makeColor={(p) =>`hsl(10,100%, ${p*50}%)` }/>
-      <PercentView value={50} max={200} makeColor={(p) => `hsl(10,100%, ${p*50}%)` }/>
-      
+    
+      <ViewBox value={100} max={100} makeColor={(p) => `hsl(229,100%,${p*50}%)`}/>
+      <ViewBox value={25} max={100} makeColor={(p) => `hsl(200,100%,${p*50}%)`}/>
+      <ViewBox value={50} max={100} makeColor={(p) => `hsl(0,100%,${p*50}%)`}/>
+  
 
 
 
