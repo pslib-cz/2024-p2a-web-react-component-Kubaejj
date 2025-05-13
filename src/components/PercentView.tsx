@@ -24,7 +24,8 @@ type PercentViewType = {
     max: number,
     makeColor: (percent: number) => string // props = delagat c#
 }
- 
+
+
 const PercentView: FC<PercentViewType> = ({max, value, makeColor}) => { //základ, export - explicitně     nebyla by to react komponenta kdyby jsme tam napsal jen PercentViewType bez fc
    
     return (

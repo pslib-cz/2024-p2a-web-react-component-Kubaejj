@@ -2,6 +2,8 @@ import './App.css'
 import ViewBox from './components/PercentView'
 //abych mohl komponentu pouzit tak ji musim dat sem a musi to byt ./neco 
 
+//props - vstupni parametr komponenty
+
 /*
 // vytvoreni strukturovaneho datoveho typu my type
 //slozene zavorky = staticky object = { string: string, number: number }
