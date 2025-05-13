@@ -1,6 +1,6 @@
 // kdyz komponenta tak musim mit
 //constantu do ktere ulozim funkci ktera musi vracet komponentu v reactu,
-import {FC} from "react"; // function component = FC
+import { FC } from "react"; // function component = FC
 import style from './PercentView.module.css' // css module
 /*
 type PercentViewType = {
@@ -26,14 +26,14 @@ type PercentViewType = {
 }
 
 
-const PercentView: FC<PercentViewType> = ({max, value, makeColor}) => { //základ, export - explicitně     nebyla by to react komponenta kdyby jsme tam napsal jen PercentViewType bez fc
-   
+const PercentView: FC<PercentViewType> = ({ max, value, makeColor }) => { //základ, export - explicitně     nebyla by to react komponenta kdyby jsme tam napsal jen PercentViewType bez fc
+
     return (
-             <div className={style.percentview}>
-            <p>{(value / max) * 100}%</p>
+        <div className={style.percentview}>
+            <p>{Math.round((value / max) * 100)}%</p>
             <div className={style.percentviewbar}>
-                <div className={style.bar} style={ {backgroundColor: makeColor(value/max), width: `${(value / max) * 100}%`}  }>
-                    
+                <div className={style.bar} style={{ backgroundColor: makeColor(value / max), width: `${(value / max) * 100}%` }}>
+
                 </div>
             </div>
         </div>
